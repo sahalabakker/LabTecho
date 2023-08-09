@@ -1,0 +1,346 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Masterpage.master.cs" Inherits="User_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hospital</title>
+    <!-- <link rel="icon" href="Assets/img/favicon.png" type="image/png"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <!-- themefy CSS -->
+    <link rel="stylesheet" href="Assets/vendors/themefy_icon/themify-icons.css" />
+    <!-- swiper slider CSS -->
+    <link rel="stylesheet" href="Assets/vendors/swiper_slider/css/swiper.min.css" />
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="Assets/vendors/select2/css/select2.min.css" />
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="Assets/vendors/niceselect/css/nice-select.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="Assets/vendors/owl_carousel/css/owl.carousel.css" />
+    <!-- gijgo css -->
+    <link rel="stylesheet" href="Assets/vendors/gijgo/gijgo.min.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="Assets/vendors/font_awesome/css/all.min.css" />
+    <link rel="stylesheet" href="Assets/vendors/tagsinput/tagsinput.css" />
+    <!-- datatable CSS -->
+    <link rel="stylesheet" href="Assets/vendors/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="Assets/vendors/datatable/css/responsive.dataTables.min.css" />
+    <link rel="stylesheet" href="Assets/vendors/datatable/css/buttons.dataTables.min.css" />
+    <!-- text editor css -->
+    <link rel="stylesheet" href="Assets/vendors/text_editor/summernote-bs4.css" />
+    <!-- morris css -->
+    <link rel="stylesheet" href="Assets/vendors/morris/morris.css">
+    <!-- metarial icon css -->
+    <link rel="stylesheet" href="Assets/vendors/material_icon/material-icons.css" />
+
+    <!-- menu css  -->
+    <link rel="stylesheet" href="Assets/css/metisMenu.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="../form1.css" />
+    <link rel="stylesheet" href="Assets/css/colors/default.css" id="colorSkinCSS"> 
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- main content part here -->
+ 
+ <!-- sidebar  -->
+ <!-- sidebar part here -->
+    <nav class="sidebar">
+        <div class="logo d-flex justify-content-between">
+            <a href="Assets/index.html"><img src="../Admin/Assets/img/LABTEC LOGO blue- clear bground.png" alt=""></a>
+            <div class="sidebar_close_icon d-lg-none">
+                <i class="ti-close"></i>
+            </div>
+        </div>
+        <ul id="sidebar_menu">
+            <%--<li class="side_menu_title">
+                <span>Dashboard</span>
+              </li>--%>
+            <%--<li class="mm-active">
+              <a class="has-arrow"  href="Assets/#"  aria-expanded="false">
+              <!-- <i class="fas fa-th"></i> -->
+              <img src="Assets/img/menu-icon/1.svg" alt="">
+                <span>Dashboard</span>
+              </a>
+              <ul>
+                <li><a class="active" href="Assets/index.html">Dashboard 1</a></li>
+                <li><a href="Assets/index_2.html">Dashboard 2</a></li>
+              </ul>
+
+            </li>--%>
+            <li class="side_menu_title">
+                <span>Components</span>
+              </li>
+            <%--<li class="">
+              <a   class="has-arrow"  aria-expanded="false">
+                <img src="Assets/img/menu-icon/6.svg" alt="">
+                <span>Bookings</span>
+              </a>
+              <ul>
+                <li><a href="New bookings.aspx">New Bookings</a></li>
+                <li><a href="Approved appoinments.aspx">Approved Bookings</a></li>
+                <li><a href="Assets/forgot_pass.html">Forgot Password</a></li>
+              </ul>
+            </li>
+
+            <li class="">
+              <a   class="has-arrow"  aria-expanded="false">
+                <img src="Assets/img/menu-icon/4.svg" alt="">
+                <span>Complaints</span>
+              </a>
+              <ul>
+                <li><a href="AddComplaint.aspx">Add Complaints</a></li>
+                <li><a href="View Reply.aspx">View Reply</a></li>
+                <li><a href="Assets/faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a   class="has-arrow"  aria-expanded="false">
+                <img src="Assets/img/menu-icon/3.svg" alt="">
+                <span>Rejected</span>
+              </a>
+              <ul>
+                <li><a href="RejectedLabList.aspx">Laboratory</a></li>
+                <li><a href="Rejected jobseeker List.aspx">Job Seeker</a></li>
+                <li><a href="Assets/faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="side_menu_title">
+                <span>Components</span>
+              </li>
+            <li class="">
+              <a   class="has-arrow" aria-expanded="false">
+                <img src="Assets/img/menu-icon/4.svg" alt="">
+                <span>Complaints</span>
+              </a>
+              <ul>
+                <li><a href="ViewComplaint.aspx">Laboratory </a>
+                    <ul>
+                        <li><a href="View Job Seeker Complaint.aspx">Job Seeker</a></li>
+                        <li><a href="Assets/dropdown.html">Dropdowns</a></li>
+                        <li><a href="Assets/Badges.html">Badges</a></li>
+                        <li><a href="Assets/Loading_Indicators.html">Loading Indicators</a></li>
+                    </ul>
+                </li>
+                <li><a href="View Job Seeker Complaint.aspx">Job Seeker</a>
+                    <ul>
+                        <li><a href="Assets/notification.html">Notifications</a></li>
+                        <li><a href="Assets/progress.html">Progress Bar</a></li>
+                        <li><a href="Assets/carousel.html">Carousel</a></li>
+                        <li><a href="Assets/cards.html">cards</a></li>
+                        <li><a href="Assets/Pagination.html">Pagination</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </li>--%>
+
+            <li class="">
+              <a   class="" href="SearchLaboratory.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/5.svg" alt="">
+                <span>Find Laboratory</span>
+              </a>
+              <%--<ul>
+                <li><a href="Assets/chart_box_1.html">Chart Boxes 1</a></li>
+                <li><a href="Assets/profilebox.html">Profile Box</a></li>
+              </ul>--%>
+            </li>
+
+            <li class="">
+              <a   class="" href="Appoinment status.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/6.svg" alt="">
+                <span>Appointment Status</span>
+              </a>
+              <%--<ul>
+                <li><a href="Assets/#">Elements</a>
+                    <ul>
+                        <li><a href="Assets/data_table.html">Data Tables</a></li>
+                        <li><a href="Assets/bootstrap_table.html">Grid Tables</a></li>
+                        <li><a href="Assets/datepicker.html">Date Picker</a></li>
+                    </ul>
+                </li>
+                <li><a href="Assets/#">Widgets</a>
+                    <ul>
+                        <li><a href="Assets/Input_Selects.html">Input Selects</a></li>
+                        <li><a href="Assets/Input_Mask.html">Input Mask</a></li>
+                    </ul>
+                </li>
+              </ul>--%>
+            </li>
+
+            <li class="">
+              <a   class="" href="View report.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>Download Report</span>
+              </a>
+              <%--<ul>
+                <li><a href="Assets/chartjs.html">ChartJS</a></li>
+                <li><a href="Assets/apex_chart.html">Apex Charts</a></li>
+                <li><a href="Assets/chart_sparkline.html">Chart sparkline</a></li>
+              </ul>--%>
+            </li>
+            <li class="">
+              <a   class="" href="Notifications.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>Notifications</span>
+              </a>
+                </li>
+            <%--<li class="">
+              <a   class="" href="Blood Content.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>Add Particulars</span>
+              </a>
+            </li>--%>
+            <%--<li class="">
+              <a   class="" href="Posted job List1.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>Posted Job Details</span>
+              </a>
+            </li>
+            <li class="">
+              <a   class="" href="Download Resume.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>Download Resume</span>
+              </a>
+            </li>
+            <li class="">
+              <a   class="" href="View Feedback.aspx" aria-expanded="">
+                <img src="Assets/img/menu-icon/7.svg" alt="">
+                <span>View Feedback</span>
+              </a>
+            </li>--%>
+
+          </ul>
+    
+    </nav>
+    <!-- sidebar part end -->
+    <!--/ sidebar  -->
+    <section class="main_content dashboard_part">
+        <!-- menu  -->
+    <div class="container-fluid no-gutters">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="header_iner d-flex justify-content-between align-items-center">
+                    <div class="sidebar_icon d-lg-none">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="serach_field-area">
+                            <div class="search_inner">
+                                <form action="#">
+                                   <%-- <div class="search_field">
+                                        <input type="text" placeholder="Search here..." >
+                                    </div>
+                                    <%--<button type="submit"> <img src="Assets/img/icon/icon_search.svg" alt=""> </button>--%>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="header_right d-flex justify-content-between align-items-center">
+                        <div class="header_notification_warp d-flex align-items-center">
+                            <li>
+                                <a href="Notifications.aspx"> <img src="Assets/img/icon/bell.svg" alt=""> </a>
+                            </li>
+                            <%--<li>
+                                <a href="Assets/#"> <img src="Assets/img/icon/msg.svg" alt=""> </a>
+                            </li>--%>
+                        </div>
+                        <div class="profile_info">
+                            <img src="Assets/img/client_img.png" alt="#">
+                            <%--<i class="ti-settings" style="color: blue; width: 300px; height: 300px;"></i>--%>
+                            <div class="profile_info_iner">
+                                <p>Patient </p>
+                                <h5><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h5>
+                                <div class="profile_info_details">
+                                    <a href="DetailsView.aspx">My Profile <i class="ti-user"></i></a>
+                                    <%--<a href="Assets/#">Edit Profile <i class="ti-user"></i></a>
+                                    <a href="Assets/#">Change Password <i class="ti-settings"></i></a>--%>
+                                    <%--<a href="Assets/#">Settings <i class="ti-settings"></i></a>--%>
+                                    <a href="Assets/#">Log Out <i class="ti-shift-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ menu  -->
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+         <!-- footer part -->
+<div class="footer_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_iner text-center">
+                    <p>2020 © Influence - Designed by <a href="Assets/#"> <i class="ti-heart"></i> </a><a href="Assets/#"> Dashboard</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- main content part end -->
+
+<!-- footer  -->
+    <!-- jquery slim -->
+<script src="Assets/js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="Assets/js/popper.min.js"></script>
+<!-- bootstarp js -->
+<script src="Assets/js/bootstrap.min.js"></script>
+<!-- sidebar menu  -->
+<script src="Assets/js/metisMenu.js"></script>
+<!-- waypoints js -->
+<script src="Assets/vendors/count_up/jquery.waypoints.min.js"></script>
+<!-- waypoints js -->
+<script src="Assets/vendors/chartlist/Chart.min.js"></script>
+<!-- counterup js -->
+<script src="Assets/vendors/count_up/jquery.counterup.min.js"></script>
+<!-- swiper slider js -->
+<script src="Assets/vendors/swiper_slider/js/swiper.min.js"></script>
+<!-- nice select -->
+<script src="Assets/vendors/niceselect/js/jquery.nice-select.min.js"></script>
+<!-- owl carousel -->
+<script src="Assets/vendors/owl_carousel/js/owl.carousel.min.js"></script>
+<!-- gijgo css -->
+<script src="Assets/vendors/gijgo/gijgo.min.js"></script>
+<!-- responsive table -->
+<script src="Assets/vendors/datatable/js/jquery.dataTables.min.js"></script>
+<script src="Assets/vendors/datatable/js/dataTables.responsive.min.js"></script>
+<script src="Assets/vendors/datatable/js/dataTables.buttons.min.js"></script>
+<script src="Assets/vendors/datatable/js/buttons.flash.min.js"></script>
+<script src="Assets/vendors/datatable/js/jszip.min.js"></script>
+<script src="Assets/vendors/datatable/js/pdfmake.min.js"></script>
+<script src="Assets/vendors/datatable/js/vfs_fonts.js"></script>
+<script src="Assets/vendors/datatable/js/buttons.html5.min.js"></script>
+<script src="Assets/vendors/datatable/js/buttons.print.min.js"></script>
+
+<script src="Assets/js/chart.min.js"></script>
+<!-- progressbar js -->
+<script src="Assets/vendors/progressbar/jquery.barfiller.js"></script>
+<!-- tag input -->
+<script src="Assets/vendors/tagsinput/tagsinput.js"></script>
+<!-- text editor js -->
+<script src="Assets/vendors/text_editor/summernote-bs4.js"></script>
+
+<script src="Assets/vendors/apex_chart/apexcharts.js"></script>
+
+<!-- custom js -->
+<script src="Assets/js/custom.js"></script>
+
+<script src="Assets/vendors/apex_chart/bar_active_1.js"></script>
+<script src="Assets/vendors/apex_chart/apex_chart_list.js"></script>
+</body>
+</html>
